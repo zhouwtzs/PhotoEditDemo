@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80BAA6D1E154CD50075F4D9 /* CRPhotoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80BAA6C1E154CD50075F4D9 /* CRPhotoEditViewController.m */; };
+		B80BAA6F1E154DE90075F4D9 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B80BAA6E1E154DE90075F4D9 /* test1.jpg */; };
+		B80BAA721E154E420075F4D9 /* CRPEBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80BAA711E154E420075F4D9 /* CRPEBottomView.m */; };
+		B80BAA751E1559E20075F4D9 /* CRPRScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80BAA741E1559E20075F4D9 /* CRPRScrollImageView.m */; };
 		B88865B91E1519480046ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88865B81E1519480046ABE6 /* main.m */; };
 		B88865BC1E1519480046ABE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B88865BB1E1519480046ABE6 /* AppDelegate.m */; };
 		B88865BF1E1519480046ABE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88865BE1E1519480046ABE6 /* ViewController.m */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B80BAA6B1E154CD50075F4D9 /* CRPhotoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPhotoEditViewController.h; sourceTree = "<group>"; };
+		B80BAA6C1E154CD50075F4D9 /* CRPhotoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPhotoEditViewController.m; sourceTree = "<group>"; };
+		B80BAA6E1E154DE90075F4D9 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
+		B80BAA701E154E420075F4D9 /* CRPEBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPEBottomView.h; sourceTree = "<group>"; };
+		B80BAA711E154E420075F4D9 /* CRPEBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPEBottomView.m; sourceTree = "<group>"; };
+		B80BAA731E1559E20075F4D9 /* CRPRScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPRScrollImageView.h; sourceTree = "<group>"; };
+		B80BAA741E1559E20075F4D9 /* CRPRScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPRScrollImageView.m; sourceTree = "<group>"; };
 		B88865B41E1519480046ABE6 /* PhotoEditDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88865B81E1519480046ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B88865BA1E1519480046ABE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +89,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B80BAA671E154C700075F4D9 /* PhotoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				B80BAA6A1E154C8A0075F4D9 /* View */,
+				B80BAA691E154C820075F4D9 /* Model */,
+				B80BAA681E154C7A0075F4D9 /* Coltroller */,
+			);
+			path = PhotoEdit;
+			sourceTree = "<group>";
+		};
+		B80BAA681E154C7A0075F4D9 /* Coltroller */ = {
+			isa = PBXGroup;
+			children = (
+				B80BAA6B1E154CD50075F4D9 /* CRPhotoEditViewController.h */,
+				B80BAA6C1E154CD50075F4D9 /* CRPhotoEditViewController.m */,
+			);
+			path = Coltroller;
+			sourceTree = "<group>";
+		};
+		B80BAA691E154C820075F4D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B80BAA6A1E154C8A0075F4D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B80BAA701E154E420075F4D9 /* CRPEBottomView.h */,
+				B80BAA711E154E420075F4D9 /* CRPEBottomView.m */,
+				B80BAA731E1559E20075F4D9 /* CRPRScrollImageView.h */,
+				B80BAA741E1559E20075F4D9 /* CRPRScrollImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B88865AB1E1519480046ABE6 = {
 			isa = PBXGroup;
 			children = (
+				B80BAA671E154C700075F4D9 /* PhotoEdit */,
 				B88865B61E1519480046ABE6 /* PhotoEditDemo */,
 				B88865D01E1519480046ABE6 /* PhotoEditDemoTests */,
 				B88865DB1E1519480046ABE6 /* PhotoEditDemoUITests */,
@@ -101,6 +150,7 @@
 		B88865B61E1519480046ABE6 /* PhotoEditDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B80BAA6E1E154DE90075F4D9 /* test1.jpg */,
 				B88865BA1E1519480046ABE6 /* AppDelegate.h */,
 				B88865BB1E1519480046ABE6 /* AppDelegate.m */,
 				B88865BD1E1519480046ABE6 /* ViewController.h */,
@@ -207,6 +257,7 @@
 				TargetAttributes = {
 					B88865B31E1519480046ABE6 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V6A9P37ADX;
 						ProvisioningStyle = Automatic;
 					};
 					B88865CC1E1519480046ABE6 = {
@@ -249,6 +300,7 @@
 				B88865C71E1519480046ABE6 /* LaunchScreen.storyboard in Resources */,
 				B88865C41E1519480046ABE6 /* Assets.xcassets in Resources */,
 				B88865C21E1519480046ABE6 /* Main.storyboard in Resources */,
+				B80BAA6F1E154DE90075F4D9 /* test1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,9 @@
 			files = (
 				B88865BF1E1519480046ABE6 /* ViewController.m in Sources */,
 				B88865BC1E1519480046ABE6 /* AppDelegate.m in Sources */,
+				B80BAA751E1559E20075F4D9 /* CRPRScrollImageView.m in Sources */,
+				B80BAA6D1E154CD50075F4D9 /* CRPhotoEditViewController.m in Sources */,
+				B80BAA721E154E420075F4D9 /* CRPEBottomView.m in Sources */,
 				B88865B91E1519480046ABE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6A9P37ADX;
 				INFOPLIST_FILE = PhotoEditDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = person.zhouwtzs.PhotoEditDemo;
@@ -435,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6A9P37ADX;
 				INFOPLIST_FILE = PhotoEditDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = person.zhouwtzs.PhotoEditDemo;
@@ -507,6 +564,7 @@
 				B88865E31E1519480046ABE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88865E41E1519480046ABE6 /* Build configuration list for PBXNativeTarget "PhotoEditDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +573,7 @@
 				B88865E61E1519480046ABE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88865E71E1519480046ABE6 /* Build configuration list for PBXNativeTarget "PhotoEditDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +582,7 @@
 				B88865E91E1519480046ABE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

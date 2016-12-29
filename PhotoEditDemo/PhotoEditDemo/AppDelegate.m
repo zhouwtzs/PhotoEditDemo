@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "CRPhotoEditViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    CRPhotoEditViewController * photoEditVC = [[CRPhotoEditViewController alloc]init];
+    
+    photoEditVC.editImage = [UIImage imageNamed:@"test1.jpg"];
+    
+    self.window.rootViewController = photoEditVC;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
